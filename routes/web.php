@@ -23,7 +23,7 @@ Route::get('/', function () {
 //Inicio
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 //CRUD usuarios
 Route::get('/users', 'UserController@index');
